@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Programs Slide</title>
+  <style>
+    body {
+      background-color: gray;
+      padding: 30px;
+    }
+    .slide {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 8px );
+    }
+    .bar {
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      font-size: 20px;
+      border-radius: 8px 8px 0 0;
+      margin-bottom: 20px;
+    }
+    code {
+      background: bright gray;
+      display: block;
+      padding: 10px;
+      border-radius: 6px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bar">JavaScript Programs</div>
+
+    <b>1. Print Name and Address</b><br>
+    <code>
+      let name = "sonali";<br>
+      let address = "123 Main St, Cityville";<br>
+      console.log("Name:", name);<br>
+      console.log("Address:", address);
+    </code><br>
+
+    <b>2. Check if Value and Data-Type are Same</b><br>
+    <code>
+      let a = 5;<br>
+      let b = "5";<br>
+      console.log(a === b ? "Same" : "Different");
+    </code><br>
+
+    <b>3. Add Two Strings and Capitalize</b><br>
+    <code>
+      let str1 = "hello";<br>
+      let str2 = "world";<br>
+      let result = (str1 + str2).toUpperCase();<br>
+      console.log(result); 
+    </code><br>
+
+    <b>4. Convert String Length to Bytes</b><br>
+    <code>
+      function byteLength(str) {<br>
+        return new Blob([str]).size;<br>
+      }<br>
+      console.log(byteLength("Hello")); 
+    </code><br>
+
+    <b>5. Round a Number to Specified Digits</b><br>
+    <code>
+      function roundTo(num, digits) {<br>
+        return parseFloat(num.toFixed(digits));<br>
+      }<br>
+      console.log(roundTo(3.14159, 2)); // 3.14
+    </code>
+  </div>
+</body>
+</html>
