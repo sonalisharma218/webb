@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Function Programs</title>
+  <style>
+    body {
+      background-color: gray;
+      padding: 30px;
+    }
+    .slide {
+      background-color: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px ;
+    }
+    .bar {
+      background-color: lightgreen;
+      color: white;
+      padding: 12px 20px;
+      font-size: 22px;
+      border-radius: 10px 10px 0 0;
+      margin-bottom: 20px;
+    }
+    code {
+      background-color: lightblue;
+      display: block;
+      padding: 12px;
+      margin-bottom: 16px;
+      border-radius: 8px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="bar">JavaScript Function Programs</div>
+
+    <b>1. Filter Out Negative Numbers</b><br>
+    <code>
+      function filterNegatives(arr) {<br>
+        return arr.filter(num => num >= 0);<br>
+      }<br>
+      console.log(filterNegatives([1, -2, 3, -4, 5])); 
+    </code><br>
+
+    <b>2. Difference from 13 or Double if Greater</b><br>
+    <code>
+      function diffFrom13(n) {<br>
+        return n > 13 ? 2 * Math.abs(n - 13) : 13 - n;<br>
+      }<br>
+      console.log(diffFrom13(20)); 
+    </code><br>
+
+    <b>3. Fibonacci Series Function</b><br>
+    <code>
+      function fibonacci(n) {<br>
+        let a = 0, b = 1, result = [a, b];<br>
+        for (let i = 2; i < n; i++) {<br>
+          let next = a + b;<br>
+          result.push(next);<br>
+          a = b;<br>
+          b = next;<br>
+        }<br>
+        return result;<br>
+      }<br>
+      console.log(fibonacci(10)); 
+    </code><br>
+
+    <b>4. Sum of Multiples of 3 and 5 Under 1000</b><br>
+    <code>
+      function sumMultiples() {<br>
+        let sum = 0;<br>
+        for (let i = 0; i < 1000; i++) {<br>
+          if (i % 3 === 0 || i % 5 === 0) sum += i;<br>
+        }<br>
+        return sum;<br>
+      }<br>
+      console.log(sumMultiples()); 
+    </code><br>
+
+    <b>5. Cube of a Number Using Function Object</b><br>
+    <code>
+      const cube = new Function("n", "return n * n * n;");<br>
+      console.log(cube(3)); 
+    </code>
+  </div>
+</body>
+</html>
